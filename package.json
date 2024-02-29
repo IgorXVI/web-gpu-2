@@ -15,7 +15,10 @@
     "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@webgpu/types": "^0.1.40",
     "ts-loader": "^9.5.1",
+    "ts-shader-loader": "^2.0.2",
     "typescript": "^5.3.3"
   }
 }

@@ -2,7 +2,7 @@ const path = require("path");
 module.exports = {
     mode: 'development',
     watch: true,
-    entry: "./src/hex-verter/main.ts",
+    entry: "./src/main.ts",
     module: {
         rules: [
             {
@@ -10,6 +10,12 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.wgsl?$/,
+                use: {
+                    loader: "ts-shader-loader",
+                }
+            }
         ],
     },
     resolve: {
